@@ -6,8 +6,6 @@
 
 # 개요
 
----
-
 ## Compose 개요
 
 Compose는 다중 컨테이너 Docker 애플리케이션을 정의하고 실행하기 위한 도구입니다.
@@ -51,7 +49,6 @@ Compose에는 애플리케이션의 전체 수명주기를 관리하기 위한 �
 
 # Compose를 효과적으로 만들기 위한 기능
 
----
 
 ## 단일 호스트에서 여러 개의 격리된 환경 구성
 
@@ -74,8 +71,6 @@ Compose는 Compose 파일의 변수를 지원합니다. 이러한 변수를 사
 `extends`필드를 사용하거나 여러 작성 파일을 작성 하여 작성 파일을 확장할 수 있습니다 .
 
 # Getting Started
-
----
 
 docker 공식문서에서는 python Flask + Redis로 샘플을 정의해 놓았다.
 해당 문서에서는 Springboot + mariaDB로 샘플을 정의한다.
