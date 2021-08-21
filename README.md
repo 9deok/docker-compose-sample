@@ -2,7 +2,7 @@
 
 1. [개요](#개요)
 2. [Compose를 효과적으로 만들기 위한 네가지 기능](#Compose를-효과적으로-만들기-위한-기능)
-3. [샘플 시작하기](#Getting-Started)
+3. [샘플 시작하기 ( Springboot + mariaDB 샘플 )](#Getting-Started)
 
 # 개요
 
