@@ -1,0 +1,25 @@
+version: "3.9"
+services:
+  app:
+    build: .
+    ports:
+      - 8080:8080
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:mariadb://database:3306/lunit?useUnicode=true
+      SPRING_DATASOURCE_USERNAME: root
+      SPRING_DATASOURCE_PASSWORD: 1234
+    restart: always
+    depends_on:
+      - database
+  database:
+    image: mariadb
+    environment:
+      - MYSQL_DATABASE=lunit
+      - MYSQL_ROOT_PASSWORD=1234
+      - MYSQL_ROOT_HOST=%
+    volumes:
+      - ./src/main/resources/db_config/conf.d:/etc/myslq/conf.d
+      - ./src/main/resources/db_config/data:/var/lib/mysql
+      - ./src/main/resources/db_config/initdb.d:/docker-entrypoint-initdb.d
+    ports:
+      - 3306:3306
