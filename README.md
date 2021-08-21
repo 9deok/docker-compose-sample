@@ -142,7 +142,7 @@ docker 공식문서에서는 python Flask + Redis로 샘플을 정의해 놓았�
       database:
         image: mariadb
         environment:
-          - MYSQL_DATABASE=lunit
+          - MYSQL_DATABASE=unit
           - MYSQL_ROOT_PASSWORD=1234
           - MYSQL_ROOT_HOST=%
         volumes:
